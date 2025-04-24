@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDS Safe Guard & Management Pvt. Ltd.</title>
+    <meta name="description" content="JDS Safe Guard & Management Pvt. Ltd. - Protecting What Matters Most. Providing top-class security and facility management services.">
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons via CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- AOS CSS (for animations) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        /* Enable smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Optional: Custom styles */
+        .accordion-content {
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+        }
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .client-logo-image {
+            object-fit: contain;
+            max-width: 100%;
+            height: auto;
+        }
+        /* Style accordion trigger icon rotation */
+        .accordion-trigger .accordion-icon {
+            transition: transform 0.3s ease;
+        }
+        .accordion-trigger[aria-expanded="true"] .accordion-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 antialiased">
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-center">
+        <div class="absolute inset-0">
+            <img
+                src="https://i.ibb.co/zhG0vkHR/Untitled-design-2.png"
+                alt="Jds Safe Guard & Management Pvt. Ltd. Background"
+                class="hero-image"
+            />
+            <div class="absolute inset-0 bg-white opacity-30"></div>
+        </div>
+        <div class="relative z-10 flex flex-col items-center text-gray-800 p-4">
+            <a href="#contact" data-aos="zoom-in" data-aos-delay="200">
+                <img
+                    src="https://i.ibb.co/gLb2L0k4/fotor-20250421132452.png"
+                    alt="JDS Safe Guard Logo"
+                    width="120"
+                    height="120"
+                    style="object-fit: contain;"
+                    class="mb-4 rounded-full shadow-md"
+                />
+            </a>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-down">Jds Safe Guard &amp; Management Private Limited</h1>
+            <p class="text-lg mb-8" data-aos="fade-up" data-aos-delay="100">Protecting What Matters Most</p>
+            <a href="#contact" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                Get in Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-16 px-8 md:px-16 bg-white overflow-hidden">
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-16">
+            <div data-aos="fade-right" class="md:w-1/2 flex justify-center">
+                 <img
+                    src="https://i.ibb.co/Csb1Cyw0/JDS-SAFEGUARD-AND-MANAGEMENT-PVT-LTD-LOGO.jpg"
+                    alt="About JDS Safe Guard"
+                    width="500"
+                    height="400"
+                    class="rounded-lg shadow-md w-full max-w-md"
+                />
+            </div>
+            <div class="md:w-1/2" data-aos="fade-left">
+                <h2 class="text-3xl font-semibold mb-4 text-gray-800">About JDS Safe Guard and Management Pvt. Ltd.</h2>
+                <p class="text-gray-700 leading-relaxed text-base">
+                    Established in 2021, JDS Safe Guard and Management Pvt. Ltd. has been a trusted provider of customized
+                    security solutions for both corporate entities and individual clients. Our company is built on the
+                    foundation of quality, integrity, innovation, and professionalism.
+                </p>
+                <p class="text-gray-700 leading-relaxed mt-4 text-base">
+                    Our mission is to ensure the safety of your
+                    present and future with top-class security and facility management services.
+                </p>
+                <p class="text-gray-700 leading-relaxed mt-4 text-base">
+                    Whether you're a business, an event organizer, a residential society, or an industrial unit – JDS Safe
+                    Guard is your reliable partner in security.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accordion Section -->
+    <section class="py-16 px-8 md:px-16 bg-gray-100">
+        <div class="container mx-auto" data-aos="fade-up">
+            <div class="accordion space-y-4">
+                <!-- Certifications Item -->
+                <div class="accordion-item border rounded bg-white shadow-sm overflow-hidden">
+                    <button class="accordion-trigger flex justify-between items-center w-full p-4 text-left text-xl md:text-2xl font-semibold text-gray-800 hover:bg-gray-50 transition-colors duration-200" aria-expanded="false">
+                        <span>Our Certifications &amp; Legal Licensing</span>
+                        <i data-lucide="chevron-down" class="accordion-icon w-6 h-6 text-gray-500"></i>
+                    </button>
+                    <div class="accordion-content max-h-0">
+                        <div class="p-4 md:p-8 border-t border-gray-200">
+                            <div id="certifications-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                                <!-- Certification Cards will be injected here by JS -->
+                                <div class="text-center col-span-full p-4 text-gray-500">Loading certifications...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services Item -->
+                <div class="accordion-item border rounded bg-white shadow-sm overflow-hidden">
+                     <button class="accordion-trigger flex justify-between items-center w-full p-4 text-left text-xl md:text-2xl font-semibold text-gray-800 hover:bg-gray-50 transition-colors duration-200" aria-expanded="false">
+                        <span>Our Services</span>
+                        <i data-lucide="chevron-down" class="accordion-icon w-6 h-6 text-gray-500"></i>
+                    </button>
+                    <div class="accordion-content max-h-0">
+                        <div class="p-4 md:p-8 border-t border-gray-200">
+                            <div id="services-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                                <!-- Service Cards will be injected here by JS -->
+                                <div class="text-center col-span-full p-4 text-gray-500">Loading services...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clients Item -->
+                <div class="accordion-item border rounded bg-white shadow-sm overflow-hidden">
+                     <button class="accordion-trigger flex justify-between items-center w-full p-4 text-left text-xl md:text-2xl font-semibold text-gray-800 hover:bg-gray-50 transition-colors duration-200" aria-expanded="false">
+                        <span>Our Clients</span>
+                        <i data-lucide="chevron-down" class="accordion-icon w-6 h-6 text-gray-500"></i>
+                    </button>
+                    <div class="accordion-content max-h-0">
+                        <div class="p-4 md:p-8 text-center border-t border-gray-200">
+                            <img
+                                src="https://i.ibb.co/jPJzG4QR/Screenshot-2025-04-21-163552.png"
+                                alt="Client Logos"
+                                width="800"
+                                height="300"
+                                class="mx-auto rounded-lg shadow-md client-logo-image"
+                                data-aos="zoom-in"
+                            />
+                            <p class="text-gray-700 mt-4">We are trusted by industry leaders across India.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="py-16 px-8 md:px-16 bg-white" id="contact">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold mb-8 text-center text-gray-800" data-aos="fade-up">Contact Us</h2>
+            <div class="flex justify-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-gray-700 max-w-lg text-center md:text-left">
+                    <p class="mb-4 text-base leading-relaxed">
+                        <strong class="text-gray-900 block text-lg mb-1">Corporate Office:</strong>
+                        Nakshatra - 9, Off. 312 (3rd Floor)<br />
+                        Fulchhab Chowk, Opp. Girnar Cinema,<br />
+                        Near Race Course, Rajkot - 360001, Gujarat, India
+                    </p>
+                    <p class="mb-4 text-base leading-relaxed">
+                        <strong class="text-gray-900">Mobile:</strong> <a href="tel:+919033012321" class="text-blue-600 hover:text-blue-800 hover:underline">+91 90330 12321</a><br />
+                        <strong class="text-gray-900">Email:</strong> <a href="mailto:info@jdssafeguard.com" class="text-blue-600 hover:text-blue-800 hover:underline">info@jdssafeguard.com</a><br />
+                        <strong class="text-gray-900">Website:</strong> <a href="https://www.jdssafeguard.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">www.jdssafeguard.com</a>
+                    </p>
+                    <p class="text-base leading-relaxed">
+                        <strong class="text-gray-900 block text-lg mb-1">Branch Offices:</strong>
+                        Bharuch<br />
+                        Junagadh
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8 px-8 md:px-16">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
+            <div>
+                <p class="text-sm">
+                    <strong class="font-semibold">JDS Safe Guard &amp; Management Pvt. Ltd.</strong><br />
+                    CIN: U999GJ2021PTC124904
+                </p>
+            </div>
+            <div>
+                <p class="text-sm">&copy; <span id="current-year">2025</span> JDS Safe Guard and Management Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
