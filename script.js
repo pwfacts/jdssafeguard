@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "ISO 9001:2015", description: "Quality Management System", certificateNumber: "", iconName: "badge-help" },
         { name: "PSARA License", description: "Security service licenses", certificateNumber: "PSA/L/73/GJ/2024/AUG/2882", iconName: "file-text" },
         { name: "GSTIN", description: "Goods and Services Tax Identification Number", certificateNumber: "24AAJCG2063M1ZH", iconName: "file-text" },
-        { name: "PAN", description: "Permanent Account Number", certificateNumber: "AAJCG2063M", iconName: "file-text" },
+        { name: "PAN", description: "Permanent Account Number", certificateNumber: "AAJ*****3M", iconName: "file-text" },
         { name: "EPF", description: "Employees' Provident Fund", certificateNumber: "GJRAJ2441551000", iconName: "file-text" },
         { name: "ESIC", description: "Employee State Insurance Corporation", certificateNumber: "37001256240000999", iconName: "file-text" },
         { name: "Shops & Establishment Act No.", description: "License for Shops and Establishments", certificateNumber: "2023-2024/SR/000342", iconName: "file-text" },
